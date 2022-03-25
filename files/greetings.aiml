@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	
+
+<category>
+    <pattern>*</pattern>
+    <template>Type "Hi" or "main menu" to start conversation</template>
+</category>
+
+<category>
+    <pattern>main menu</pattern>
+    <template><srai>Hi</srai></template>
+</category>
+
+
+<category>
+    <pattern>Hi</pattern>
+    <template>Hello! I'm WGU Computer Science Virtual Counselor bot. How can I help you today?
+    <button>
+        <text>Help me find a CS career</text>
+        <postback>career</postback>
+    </button>
+    <button>
+        <text>Show me some popular CS jobs</text>
+        <postback>show10</postback>
+    </button>
+    </template>
+</category>
+
+<category>
+    <pattern>show10</pattern>
+    <template>I found a nice article here. Take a look! <br></br><br></br> Type main menu to go back to the beginning at anytime.
+    <button>
+        <text>Take me to the article</text>
+        <url>https://joinhandshake.com/blog/students/top-10-jobs-for-computer-science-majors/</url>
+    </button>
+    </template>
+</category>
+
+<category>
+    <pattern>career</pattern>
+    <template>Sure, I can help with that. Let's find out what excites you the most! <br></br><br></br> Type main menu to go back to the beginning at anytime.
+     <button>
+            <text>I like to create and develop things</text>
+            <postback>code</postback>
+        </button>
+     <button>
+            <text>I like to work with data</text>
+            <postback>data</postback>
+        </button>
+     <button>
+            <text>I like solving problems</text>
+            <postback>analyst</postback>
+        </button>
+     <button>
+            <text>I like the newest and hottest!</text>
+            <postback>trendy</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>code</pattern>
+    <template>Do you enjoy coding and make functional things?
+         <button>
+            <text>Yes!</text>
+            <postback>software</postback>
+        </button>
+        <button>
+            <text>Yes, but I also like to mix in my aesthetical senses</text>
+            <postback>webdev</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>software</pattern>
+    <template>Software Engineer sounds like your cup of tea! Learn to find out more.
+    <button>
+        <text>Software Engineer</text>
+        <url>https://www.springboard.com/blog/software-engineering/software-engineer-job-description/</url>
+    </button>
+    </template>
+</category>
+
+<category>
+    <pattern>webdev</pattern>
+    <template>Sounds like you may shine as a Web developer and UI designer. Learn to find out more.
+    <button>
+        <text>Web Developer</text>
+        <url>https://www.coursera.org/articles/web-developer</url>
+    </button>
+    <button>
+        <text>UI Designer</text>
+        <url>https://www.glassdoor.com/Job-Descriptions/UI-Designer.htm#:~:text=A%20UI%20designer%20is%20responsible,the%20interface%20of%20a%20product.</url>
+    </button>
+    </template>
+</category>
+
+<category>
+    <pattern>data</pattern>
+    <template>Do you like analyzing a data set and make something meaningful out of it?
+    <button>
+        <text>yes</text>
+        <postback>datascientist</postback>
+    </button>
+    <button>
+        <text>No, but I like working with the database and maintain its integrity</text>
+        <postback>databaseadmin</postback>
+    </button>
+    </template>
+</category>
+
+<category>
+    <pattern>datascientist</pattern>
+    <template>Consider these interesting paths. Learn to find out more.
+    <button>
+        <text>Data Scientist</text>
+        <url>https://www.northeastern.edu/graduate/blog/what-does-a-data-scientist-do/#:~:text=By%20extrapolating%20and%20sharing%20these,help%20organizations%20make%20objective%20decisions.</url>
+    </button>
+    <button>
+        <text>Big Data Engineer</text>
+        <url>https://online.maryville.edu/online-masters-degrees/business-data-analytics/careers/big-data-engineer/#:~:text=Big%20data%20engineers%20interact%20with,then%20use%20to%20predict%20behavior.</url>
+    </button>
+    <button>
+        <text>Machine Learning Engineer</text>
+        <url>https://www.techtarget.com/searchenterpriseai/definition/machine-learning-engineer-ML-engineer#:~:text=A%20machine%20learning%20engineer%20(ML,systems%20to%20automate%20predictive%20models.</url>
+    </button>
+    </template>
+</category>
+
+<category>
+    <pattern>databaseadmin</pattern>
+    <template>Consider Database Administrator. Learn to find out more.
+    <button>
+        <text>Database Administrator</text>
+        <url>https://money.usnews.com/careers/best-jobs/database-administrator</url>
+    </button>
+    </template>
+</category>
+
+<category>
+    <pattern>analyst</pattern>
+    <template>Problem solving skills can make you a strong candidate for these jobs.
+    <button>
+        <text>Application Analyst</text>
+        <url>https://www.fieldengineer.com/skills/application-analyst</url>
+    </button>
+    <button>
+        <text>Cyber Security Analyst</text>
+        <url>https://www.wgu.edu/career-guide/information-technology/cybersecurity-analyst-career.html#:~:text=A%20cybersecurity%20analyst%20protects%20company,could%20potentially%20breach%20the%20network.</url>
+    </button>
+    </template>
+</category>
+
+<category>
+    <pattern>trendy</pattern>
+    <template>Interested in jumping into the newest technology out there? Check out these jobs!
+    <button>
+        <text>Cloud Engineer</text>
+        <url>https://www.coursera.org/articles/what-is-a-cloud-engineer</url>
+    </button>
+    <button>
+        <text>Artificial Intelligence (AI) Engineer</text>
+        <url>https://www.datarobot.com/blog/what-is-artificial-intelligence-engineering/#:~:text=An%20artificial%20intelligence%20engineer%20is,advertising%20based%20on%20sentiment%20analysis</url>
+    </button>
+    </template>
+</category>
+</aiml>
